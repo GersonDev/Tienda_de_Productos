@@ -7,25 +7,60 @@
     tools:context=".PrimerPantallaBienvenida">
 
     <ImageView
-        android:id="@+id/bienvenidaPantalla1_imageView"
-        android:layout_width="328dp"
-        android:layout_height="335dp"
-        android:layout_marginStart="41dp"
-        android:layout_marginTop="83dp"
-        android:layout_marginEnd="42dp"
+        android:id="@+id/bienvenidaPantalla1ImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/imagenpantallauno" />
 
     <TextView
-        android:id="@+id/tituloPrincipal_textView"
+        android:id="@+id/tituloPrincipal1textView"
         android:layout_width="279dp"
-        android:layout_height="63dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="66dp"
         android:gravity="center"
         android:text="Order your Groceries \t from your phone"
         android:textColor="#050303"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="77dp"
-        tools:layout_editor_absoluteY="448dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bienvenidaPantalla1ImageView" />
+
+    <TextView
+        android:id="@+id/tituloSecundariotextView"
+        android:layout_width="287dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="31dp"
+        android:gravity="center"
+        android:text="Now  you  can  get  groceries  item \t at  your  doorstep"
+        android:textColor="#100707"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/avanzar_Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloPrincipal1textView" />
+
+    <ImageView
+        android:id="@+id/avanzar_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloSecundariotextView"
+        app:srcCompat="@drawable/primer_boton" />
 </androidx.constraintlayout.widget.ConstraintLayout>

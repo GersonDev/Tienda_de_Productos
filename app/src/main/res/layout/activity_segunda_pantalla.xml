@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SegundaPantalla">
+
+    <ImageView
+        android:id="@+id/pantallaDos_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imagen_pantalla_dos" />
+
+    <TextView
+        android:id="@+id/tituloPrincipal2TextView"
+        android:layout_width="279dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="66dp"
+        android:gravity="center"
+        android:text="Delevering groceries \t under 15 minutes"
+        android:textColor="#090000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pantallaDos_imageView" />
+
+    <TextView
+        android:id="@+id/textoSecundario2TextView"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center"
+        android:text="Explore and order your favorite \t grocery items"
+        android:textColor="#090202"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloPrincipal2TextView" />
+
+    <Button
+        android:id="@+id/exploreButton"
+        android:layout_width="216dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="#FFCD41"
+        android:text="Explore"
+        android:textColor="#0B0707"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoSecundario2TextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
